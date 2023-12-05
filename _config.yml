@@ -1,6 +1,6 @@
 # 1. Site Settings
 locale              : "zh-TW"
-title               : Erlsn's Delight
+title               : 3r1sn's Delight
 owner               : "Errolson Wu"
 url                 : "https://3r1sn5.github.io"
 baseurl             : ""
@@ -88,7 +88,7 @@ defaults:
 
 # 5. Social Media Accounts
 email               : "ErlsnWu@gmail.com"
-github              : "ErlsnWu" 
+github              : "3r1sn5" 
 twitter             : "ErrolsonWu"
 facebook            : "ErlsnWu"
 instagram           : "erlsnwu"
