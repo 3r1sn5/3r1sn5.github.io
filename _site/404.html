@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <!-- multi-device width -->
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <!-- site description -->
+    
+    <meta content="Computer Science, Mathematics, Tennis, GUNPLA and Video Game!" name="description"/>
+    <!-- referer for 3rd-part images-->
+    <meta content="no-referrer" name="referrer"/>
+    <!-- title -->
+    <title>
+        
+            Erlsn&#39;s Delight
+        
+    </title>
+    <!-- icon -->
+    <link href="http://localhost:4000/src/assets/img/favicon.ico" rel="shortcut icon bookmark" type="image/x-icon"/>
+    <!-- global stylesheet -->
+    <link rel="stylesheet" href="http://localhost:4000/src/assets/css/main.css" type="text/css"/>
+    <!-- fa 5.9.0 -->
+    <link rel="stylesheet" href="http://localhost:4000/src/assets/css/fa.min.css" type="text/css"/>
+    <!-- global script -->
+    <script src="http://localhost:4000/src/assets/js/main.js" async></script>
+    <!-- mathjax 2.7.5 -->
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <!-- mermaid 8.11.5-->
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.11.5/mermaid.min.js"></script>
+    
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Erlsn’s Delight | Computer Science, Mathematics, Tennis, GUNPLA and Video Game!</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="Erlsn’s Delight" />
+<meta name="author" content="ErlsnWu" />
+<meta property="og:locale" content="zh_TW" />
+<meta name="description" content="Computer Science, Mathematics, Tennis, GUNPLA and Video Game!" />
+<meta property="og:description" content="Computer Science, Mathematics, Tennis, GUNPLA and Video Game!" />
+<link rel="canonical" href="http://localhost:4000/404" />
+<meta property="og:url" content="http://localhost:4000/404" />
+<meta property="og:site_name" content="Erlsn’s Delight" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Erlsn’s Delight" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@ErlsnWu" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"ErlsnWu"},"description":"Computer Science, Mathematics, Tennis, GUNPLA and Video Game!","headline":"Erlsn’s Delight","url":"http://localhost:4000/404"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+  <body class="page">
+    <!-- background animations -->
+<div class="div_bg">
+  <canvas id="c"></canvas>
+</div>
+<script>
+var c = document.getElementById("c");
+var ctx = c.getContext("2d");
+c.height = window.innerHeight;
+c.width = window.innerWidth;
+var txts = "エルスンウー";
+txts = txts.split("");
+var font_size = 12;
+var columns = c.width / font_size;
+var drops = [];
+for (var x = 0; x < columns; x++) drops[x] = 1;
+
+function draw() {
+ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+ctx.fillRect(0, 0, c.width, c.height);
+ctx.fillStyle = "#0ff";
+ctx.font = font_size + "px monospace";
+for (var i = 0; i < drops.length; i++) {
+  var text = txts[Math.floor(Math.random() * txts.length)];
+  var color = "#0B4AF9";
+  /*var randNum = Math.floor(Math.random() * 3);
+  if (randNum == 0) color += "ff0"; // neon yellow
+  else if (randNum == 1) color += "f08"; // neon pink
+  else color += "0ff"; // neon blue*/
+  ctx.fillStyle = color;
+  ctx.fillText(text, i * font_size, drops[i] * font_size);
+  if (drops[i] * font_size > c.height || Math.random() > 0.98) drops[i] = 0;
+  drops[i]++;
+}
+/*function glitchEffect() {
+  for (var i = 0; i < c.width; i++) {
+    for (var j = 0; j < c.height; j++) {
+      if (Math.random() > 0.97) {
+        var x = Math.floor(Math.random() * 20) - 10;
+        var y = Math.floor(Math.random() * 20) - 10;
+        ctx.drawImage(c, i, j, 1, 1, i + x, j + y, 1, 1);
+      }
+    }
+  }
+}*/
+
+}
+setInterval(draw, 20);
+</script>
+    <!-- collection list, shown by click "archive" buttom in header -->
+<div class="collection_list_container"  id="the_collection_list">
+<div class="collection_list_background"  onclick="close_collection_list()"></div>
+<div class="collection_list" onload="none">
+    <div class="collection_list_header">
+        <!-- TODO: search post -->
+                                            <!-- <a class="search_btn">
+      <i class="fa fa-search"> Search</i>
+    </a>
+    &nbsp; -->
+        <table class="collection_list_header_title">
+            <tr>
+                <td style="color: #FFFF00;">Archive:</td>
+                <td id="clh_title"></td>
+            </tr>
+        </table>
+        <div class="close_btn" onclick="close_collection_list()">
+            <a class="close_btn_icon">
+                <i class="fa fa-times"></i>
+            </a>
+        </div>
+    </div>
+    <div style="color: #FFFF00;" class="collection_name_list">
+        <table class="vertical_center_table">
+            <tr>
+                <td>
+                    <ul>
+                        <!-- show all collections -->
+                        <li>
+                            <a class="a_collection_label" onclick="show_collection('all')">All
+                            </a>
+                        </li>
+                        <!-- show a simple collection -->
+                        
+                            
+                                
+                                    
+                                
+                                    
+                                        <li>
+                                            <a class="a_collection_label" onclick="show_collection('computerScience')">
+                                                
+                                                    Computer Science
+                                                
+                                            </a>
+                                        </li>
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                            
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                        <li>
+                                            <a class="a_collection_label" onclick="show_collection('mathematics')">
+                                                
+                                                    Mathematics
+                                                
+                                            </a>
+                                        </li>
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                            
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                        <li>
+                                            <a class="a_collection_label" onclick="show_collection('programming')">
+                                                
+                                                    Programming
+                                                
+                                            </a>
+                                        </li>
+                                    
+                                
+                                    
+                                
+                            
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                            
+                                
+                                    
+                                        <li>
+                                            <a class="a_collection_label" onclick="show_collection('acg')">
+                                                
+                                                    ACG
+                                                
+                                            </a>
+                                        </li>
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                            
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                        <li>
+                                            <a class="a_collection_label" onclick="show_collection('rock4life')">
+                                                
+                                                    Rock 4 Life
+                                                
+                                            </a>
+                                        </li>
+                                    
+                                
+                            
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                        <li>
+                                            <a class="a_collection_label" onclick="show_collection('daily')">
+                                                
+                                                    Daily
+                                                
+                                            </a>
+                                        </li>
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                            
+                        
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="posts_by_cate">
+        <!-- post list in all collections -->
+        <div class="post_list_in_1_collection" id="all">
+            <table class="vertical_center_table">
+                <tr>
+                    <td>
+                        <ul>
+                            
+                                
+                                    
+                                        
+                                    
+                                        
+                                            <p class="h_collection_label">
+                                                
+                                                    Computer Science
+                                                
+                                            </p>
+                                            
+                                                
+                                                    <li>
+                                                        <a style="color: #FFFF00" class="a_title" href="http://localhost:4000/computerScience/CSBooklist/">My Book List</a>
+                                                    </li>
+                                                
+                                            
+                                                
+                                                    <li>
+                                                        <a style="color: #FFFF00" class="a_title" href="http://localhost:4000/computerScience/ProjectLC2F/">Project-Optimization of LiveChess2FEN on Nvidia Jetson Nano</a>
+                                                    </li>
+                                                
+                                            
+                                                
+                                                    <li>
+                                                        <a style="color: #FFFF00" class="a_title" href="http://localhost:4000/computerScience/NVJNSetup/">Nvidia Jetson Nano Setup Guide</a>
+                                                    </li>
+                                                
+                                            
+                                                
+                                                    <li>
+                                                        <a style="color: #FFFF00" class="a_title" href="http://localhost:4000/computerScience/WorkStation/">Workstation</a>
+                                                    </li>
+                                                
+                                            
+                                            <br/>
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                            <p class="h_collection_label">
+                                                
+                                                    Mathematics
+                                                
+                                            </p>
+                                            
+                                                
+                                                    <li>
+                                                        <a style="color: #FFFF00" class="a_title" href="http://localhost:4000/mathematics/MathBooklist/">My Book List</a>
+                                                    </li>
+                                                
+                                            
+                                            <br/>
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                            <p class="h_collection_label">
+                                                
+                                                    Programming
+                                                
+                                            </p>
+                                            
+                                                
+                                                    <li>
+                                                        <a style="color: #FFFF00" class="a_title" href="http://localhost:4000/programming/CodingBooklist/">My Book List</a>
+                                                    </li>
+                                                
+                                            
+                                            <br/>
+                                        
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <p class="h_collection_label">
+                                                
+                                                    ACG
+                                                
+                                            </p>
+                                            
+                                                
+                                                    <li>
+                                                        <a style="color: #FFFF00" class="a_title" href="http://localhost:4000/acg/MH/">モンハン</a>
+                                                    </li>
+                                                
+                                            
+                                                
+                                                    <li>
+                                                        <a style="color: #FFFF00" class="a_title" href="http://localhost:4000/acg/BTR/">『ぼっち・ざ・ろっく！』孤獨搖滾！</a>
+                                                    </li>
+                                                
+                                            
+                                                
+                                                    <li>
+                                                        <a style="color: #FFFF00" class="a_title" href="http://localhost:4000/acg/CP2077PL/">Cyberpunk 2077 : Phantom Liberty</a>
+                                                    </li>
+                                                
+                                            
+                                                
+                                                    <li>
+                                                        <a style="color: #FFFF00" class="a_title" href="http://localhost:4000/acg/Zelda/">The Legend of Zelda : Breath of the wild & Tears of the Kindom</a>
+                                                    </li>
+                                                
+                                            
+                                            <br/>
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                            <p class="h_collection_label">
+                                                
+                                                    Rock 4 Life
+                                                
+                                            </p>
+                                            
+                                                
+                                                    <li>
+                                                        <a style="color: #FFFF00" class="a_title" href="http://localhost:4000/rock4life/TheBigFinishTour/">The Big Finish Tour!</a>
+                                                    </li>
+                                                
+                                            
+                                            <br/>
+                                        
+                                    
+                                
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                            <p class="h_collection_label">
+                                                
+                                                    Daily
+                                                
+                                            </p>
+                                            
+                                                
+                                                    <li>
+                                                        <a style="color: #FFFF00" class="a_title" href="http://localhost:4000/daily/FirstKBCustom/">My first keyboard modding! ROG Azoth</a>
+                                                    </li>
+                                                
+                                            
+                                            <br/>
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                
+                            
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!-- post list in a collection -->
+        
+            <div class="post_list_in_1_collection" id="acg">
+                <table class="vertical_center_table">
+                    <tr>
+                        <td>
+                            <ul>
+                                
+                                    
+                                        <li>
+                                            <a style="color: #FFFF00;"  class="a_title" href="http://localhost:4000/acg/MH/">モンハン</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a style="color: #FFFF00;"  class="a_title" href="http://localhost:4000/acg/BTR/">『ぼっち・ざ・ろっく！』孤獨搖滾！</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a style="color: #FFFF00;"  class="a_title" href="http://localhost:4000/acg/CP2077PL/">Cyberpunk 2077 : Phantom Liberty</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a style="color: #FFFF00;"  class="a_title" href="http://localhost:4000/acg/Zelda/">The Legend of Zelda : Breath of the wild & Tears of the Kindom</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        
+            <div class="post_list_in_1_collection" id="computerScience">
+                <table class="vertical_center_table">
+                    <tr>
+                        <td>
+                            <ul>
+                                
+                                    
+                                        <li>
+                                            <a style="color: #FFFF00;"  class="a_title" href="http://localhost:4000/computerScience/CSBooklist/">My Book List</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a style="color: #FFFF00;"  class="a_title" href="http://localhost:4000/computerScience/ProjectLC2F/">Project-Optimization of LiveChess2FEN on Nvidia Jetson Nano</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a style="color: #FFFF00;"  class="a_title" href="http://localhost:4000/computerScience/NVJNSetup/">Nvidia Jetson Nano Setup Guide</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a style="color: #FFFF00;"  class="a_title" href="http://localhost:4000/computerScience/WorkStation/">Workstation</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        
+            <div class="post_list_in_1_collection" id="daily">
+                <table class="vertical_center_table">
+                    <tr>
+                        <td>
+                            <ul>
+                                
+                                    
+                                        <li>
+                                            <a style="color: #FFFF00;"  class="a_title" href="http://localhost:4000/daily/FirstKBCustom/">My first keyboard modding! ROG Azoth</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        
+            <div class="post_list_in_1_collection" id="mathematics">
+                <table class="vertical_center_table">
+                    <tr>
+                        <td>
+                            <ul>
+                                
+                                    
+                                        <li>
+                                            <a style="color: #FFFF00;"  class="a_title" href="http://localhost:4000/mathematics/MathBooklist/">My Book List</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        
+            <div class="post_list_in_1_collection" id="posts">
+                <table class="vertical_center_table">
+                    <tr>
+                        <td>
+                            <ul>
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        
+            <div class="post_list_in_1_collection" id="programming">
+                <table class="vertical_center_table">
+                    <tr>
+                        <td>
+                            <ul>
+                                
+                                    
+                                        <li>
+                                            <a style="color: #FFFF00;"  class="a_title" href="http://localhost:4000/programming/CodingBooklist/">My Book List</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        
+            <div class="post_list_in_1_collection" id="rock4life">
+                <table class="vertical_center_table">
+                    <tr>
+                        <td>
+                            <ul>
+                                
+                                    
+                                        <li>
+                                            <a style="color: #FFFF00;"  class="a_title" href="http://localhost:4000/rock4life/TheBigFinishTour/">The Big Finish Tour!</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        
+    </div>
+</div>
+</div>
+    <div class="container" id="ctner">
+       <div class="header">
+  <table class="vertical_center_table">
+    <tr>
+      <td>
+        <nav class="nav_bar">
+          <ul>
+            <!-- left header -->
+            <li class="li_left">
+              <!-- open collection tree -->
+              
+              <a class="header_btn" onclick="open_collection_list()">
+                <i class="fa btn_icon fa-bars">
+                  
+                </i>
+              </a>
+              
+              <!-- home -->
+              
+              <a class="header_btn" href="http://localhost:4000">
+                <i class="fa btn_icon fa-home">
+                  
+                </i>
+              </a>
+              
+              <!-- maximize -->
+              
+              <a class="header_btn" id="mxmz_btn" onclick="toggle_maximize()">
+                <i class="fa btn_icon fa-window-maximize">
+                  
+                </i>
+              </a>
+              
+              <!-- access token -->
+              
+            </li>
+            <!-- right header -->
+            <span class="span_right">
+              
+              <a class="site_title" href="http://localhost:4000"
+                >Erlsn's Delight</a
+              >
+              
+              <a class="site_owner"> - </a>
+              <a class="site_owner" href="https://github.com/ErlsnWu">
+                Errolson Wu</a
+              >
+               
+            </span>
+          </ul>
+        </nav>
+        <!-- <hr /> -->
+      </td>
+    </tr>
+  </table>
+</div>
+<!-- table of content -->
+
+<!-- toggle maximize -->
+
+<script>
+  var ctner_state = 0;
+  var ctner = document.getElementById("ctner");
+</script>
+
+<!-- encrypt and decrypt -->
+
+
+      <div class="div_article" id="div_atcl">
+        <article
+          id="main_atcl"
+          itemscope
+          itemtype="http://schema.org/BlogPosting"
+        >
+          <h1><b style="color: #f4d03f;"> 404 - Page Not Found </b><h1>
+
+
+
+</h1></h1>
+ <div class="post_list">
+
+</div> 
+
+        </article>
+        
+      </div>
+    </div>
+  </body>
+  <script async src="http://localhost:4000/src/assets/js/init-mermaid.js"></script>
+</html>

@@ -1,0 +1,120 @@
+# 1. Site Settings
+locale              : "zh-TW"
+title               : Erlsn's Delight
+owner               : "Errolson Wu"
+url                 : "https://3r1sn5.github.io"
+baseurl             : ""
+permalink           : /:title/
+description         : "Computer Science, Mathematics, Tennis, GUNPLA and Video Game!"
+markdown            : kramdown
+statement           : "All Rights Reserved"
+bgtext              : "エルスンウー" # texts randomly displayed in background
+
+# 2. Your Collections
+# You can specify the order shown in Archive window. 
+# Keep it null if you want to show items in alphabetic order.
+collection_order    : 
+  [
+    "computerScience",
+    "mathematics",
+    "programming",
+    "gunpla",
+    "acg",
+    # "myNotes",
+    "rock4life",
+    "daily"
+  ]
+collections:
+  mathematics:   
+    output          : true
+    permalink       : /:collection/:title/
+    sort_by         : date
+    alias           : "Mathematics"
+  computerScience:
+    output          : true
+    permalink       : /:collection/:title/
+    sort_by         : date
+    alias           : "Computer Science"
+  programming:
+    output          : true
+    permalink       : /:collection/:title/
+    alias           : "Programming"
+  #gunpla:
+  #  output          : true
+  #  permalink       : /:collection/:title/
+  #  alias           : "GUNPLA"
+  acg:
+    output          : true
+    permalink       : /:collection/:title/
+    alias           : "ACG"
+  #myNotes:
+  #  output          : false
+  #  permalink       : /:collection/:title/
+    # An alias should be given or the UNDERSCORE will appeared 
+  #  alias           : "My Notes"
+  rock4life:
+    output          : true
+    permalink       : /:collection/:title/
+    alias           : "Rock 4 Life"
+  daily:
+    output          : true
+    permalink       : /:collection/:title/
+    alias           : "Daily"
+  
+# 3. Comment settings（disqus.com）
+disqus_username     : ErlsnWu
+
+# 4. Default page settings (WILL BE overwriten by front-matters of a page)
+defaults:
+  -    
+    scope:
+      path          : ""  # an empty string here means all files in the project
+    values:
+      layout              : "post"      # which layout to use by default
+      publish             : true        # whether to show by default      
+      btn_text            : false        # whether show button text by default
+      collection_list     : true        # whether show archive button by default
+      home_btn            : true        # whether show home by default
+      maximize            : true        # whether show maximize button by default
+      encrypted_text      : false       # whether use encrytion function by default
+      toc                 : false        # whether show table of content by default
+      toc_level           : 3           # the toc depth by default
+      author              : "ErlsnWu" # author name by default
+      show_date           : true        # whether show date message by default
+      category            :             # category by default
+      post_list           : true       # whether show list of post by default      
+      comment             : false
+      footer              : true        # whether show footer by default
+
+# 5. Social Media Accounts
+email               : "ErlsnWu@gmail.com"
+github              : "ErlsnWu" 
+twitter             : "ErrolsonWu"
+facebook            : "ErlsnWu"
+instagram           : "erlsnwu"
+steam               : "K1NG0DyR"
+
+# 6. Where things are
+source              : .
+destination         : ./_site
+collections_dir     : collections
+plugins_dir         : src/_plugins # takes an array of strings and loads plugins in that order
+layouts_dir         : src/_layouts
+data_dir            : src/_data
+includes_dir        : src/_includes
+sass:
+  sass_dir          : src/_sass
+
+# 7. Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  
+gems: [jekyll-mermaid]
+
+# 8. Others
+# Cross-Origin Resource Sharing header
+webrick:
+  headers:
+    Access-Control-Allow-Origin: "*"
