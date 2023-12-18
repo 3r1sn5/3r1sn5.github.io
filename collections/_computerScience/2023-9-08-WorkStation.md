@@ -1,6 +1,6 @@
 ---
 title: "Workstation"
-date: "Jul 28, 2023"
+date: "Set 08, 2023"
 ---
 <div>
   <style>
@@ -22,9 +22,10 @@ date: "Jul 28, 2023"
          <span style="color: var(--neon-yellow);">SSD</span> : Solidigm P44 Pro 1TB\(\times\)2 and 2TB\(\times\)2. Two 1TB drives, one for Ubuntu and one for Windows, and each OS has a 2TB data drive.<br>
          <span style="color: var(--neon-yellow);">Cooler</span> : MSI MEG Coreliquid S360. An air cooler can't handle a 13900K well, and nowadays, AIO coolers are pretty stable.<br>
          <span style="color: var(--neon-yellow);">Case</span> : MSI MEG Prospect 700R. It has some fancy features, such as the LCD on top of it, and it's officially verified to support for the Z790 Godlike.<br>
-         <span style="color: var(--neon-yellow);">Keyboard</span> : ASUS ROG Azoth (ROG NX Red Switches). It's wireless and the perfect size for my desk.<br>
+         <span style="color: var(--neon-yellow);">Keyboard</span> : ASUS ROG Azoth (ROG NX Red Switches). I did some <a style="color: var(--neon-pink);" href="https://3r1sn5.github.io/daily/FirstKBCustom/"> modifications </a> on it.<br>
          <span style="color: var(--neon-yellow);">Mouse</span> : ASUS ROG Harpe Ace Aim Lab Edition. I used the G502 (both wired and wireless) for years, and it served me well, but I just want something lighter.<br>
          <span style="color: var(--neon-yellow);">Monitor</span> : MSI G274QPF-QD. 2K resolution and 144Hz refresh rate. I would say it's perfect for coding, reading and gaming.<br>
+         <img src="https://i.imgur.com/V0R7O0W.jpg" style="width: 50%; height: 50%;" loading="lazy">
     </h3>
 </div>
 
