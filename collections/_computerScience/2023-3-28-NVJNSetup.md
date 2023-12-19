@@ -1,9 +1,8 @@
 ---
-title: "Nvidia Jetson Nano Setup Guide"
+title: "Nvidia Jetson Nano Basic Setup Guide"
 date: "Mar 13, 2023"
 ---
 <div>
-
   <style>
     /* Neon colors */
     :root {
@@ -15,8 +14,7 @@ date: "Mar 13, 2023"
     }
   </style>
 
-
-  <h3>This guide includes <a style="color: var(--neon-pink);" href="https://github.com/davidmallasen/LiveChess2FEN">LiveChess2FEN</a> setup, which is part of <a style="color: var(--neon-pink);" href="https://erlsnwu.github.io/computerScience/ProjectLC2F/">this project</a>.</h3>
+  <h3>Here's a record of my setup process. If you need guidance for <a style="color: var(--neon-pink);" href="https://github.com/davidmallasen/LiveChess2FEN">LiveChess2FEN</a>, refer to the original author's page, ensuring you check the version before installation!</h3>
     <h3 style="color: var(--neon-yellow);"><b>1.Writing image file and bootup</b></h3>
     <ol type="I">
         <li><span style="color: var(--neon-purple);">Format your microSD via SD Memory Card Formatter</span>

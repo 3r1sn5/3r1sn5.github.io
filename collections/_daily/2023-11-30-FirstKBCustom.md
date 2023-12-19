@@ -18,7 +18,7 @@ date: "Nov 30, 2023"
     </style>
   <h3>
     <img class="KBimage" src="https://i.imgur.com/Pt3834j.jpg" loading="lazy">
-    My first ever keyboard modding! I purchaseed Azoth in July. I'm actually pretty satisfying with the original setup but I thinking the sound and the feeling from switch could be better.<br>
+    My first ever keyboard modding! I purchased Azoth in July. I'm actually pretty satisfying with the original setup but I thinking the sound and the feeling from switch could be better.<br>
     So I change the switches, stabilizers, keycaps and dampening foams. <span style="color: var(--neon-pink)"> Including following parts </span> : <br> 
     <span style="color: var(--neon-yellow);">TTC Tiger Switch RGB Version<br>
     <img class="KBimage" src="https://i.imgur.com/dClWFu5.jpg" loading="lazy">

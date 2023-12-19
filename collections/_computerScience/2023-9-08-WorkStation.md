@@ -23,8 +23,10 @@ date: "Set 08, 2023"
          <span style="color: var(--neon-yellow);">Cooler</span> : MSI MEG Coreliquid S360. An air cooler can't handle a 13900K well, and nowadays, AIO coolers are pretty stable.<br>
          <span style="color: var(--neon-yellow);">Case</span> : MSI MEG Prospect 700R. It has some fancy features, such as the LCD on top of it, and it's officially verified to support for the Z790 Godlike.<br>
          <span style="color: var(--neon-yellow);">Keyboard</span> : ASUS ROG Azoth (ROG NX Red Switches). I did some <a style="color: var(--neon-pink);" href="https://3r1sn5.github.io/daily/FirstKBCustom/"> modifications </a> on it.<br>
-         <span style="color: var(--neon-yellow);">Mouse</span> : ASUS ROG Harpe Ace Aim Lab Edition. I used the G502 (both wired and wireless) for years, and it served me well, but I just want something lighter.<br>
+         <span style="color: var(--neon-yellow);">Mouse</span> : ASUS ROG Harpe Ace Aim Lab Edition. I used the G502 (both wired and wireless) for years, 
+         and it served me well, but now, inexplicably, I find myself wanting something lighter.<br>
          <span style="color: var(--neon-yellow);">Monitor</span> : MSI G274QPF-QD. 2K resolution and 144Hz refresh rate. I would say it's perfect for coding, reading and gaming.<br>
+         <span style="color: var(--neon-yellow);">Headset</span> : Sony Inzone H9 / Audeze Maxwell. I'm using Maxwell as my main headset of my PC. H9 for my PS consoles.<br>
          <img src="https://i.imgur.com/V0R7O0W.jpg" style="width: 50%; height: 50%;" loading="lazy">
     </h3>
 </div>
