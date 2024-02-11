@@ -1,5 +1,5 @@
 ---
-title: "The Big Finish Tour!"
+title: "[Live] The Big Finish Tour!"
 date: "Aug 5, 2023"
 ---
 <div>

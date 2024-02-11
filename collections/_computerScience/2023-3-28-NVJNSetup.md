@@ -1,5 +1,5 @@
 ---
-title: "Nvidia Jetson Nano Basic Setup Guide"
+title: "[Hardware] Nvidia Jetson Nano Basic Setup Guide"
 date: "Mar 13, 2023"
 ---
 <div>

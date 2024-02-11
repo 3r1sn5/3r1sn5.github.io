@@ -1,5 +1,5 @@
 ---
-title: "Workstation"
+title: "[Hardware] Workstation"
 date: "Set 08, 2023"
 ---
 <div>
@@ -26,7 +26,7 @@ date: "Set 08, 2023"
          <span style="color: var(--neon-yellow);">Mouse</span> : ASUS ROG Harpe Ace Aim Lab Edition. I used the G502 (both wired and wireless) for years, 
          and it served me well, but now, inexplicably, I find myself wanting something lighter.<br>
          <span style="color: var(--neon-yellow);">Monitor</span> : MSI G274QPF-QD. 2K resolution and 144Hz refresh rate. I would say it's perfect for coding, reading and gaming.<br>
-         <span style="color: var(--neon-yellow);">Headset</span> : Sony Inzone H9 / Audeze Maxwell. I'm using Maxwell as my main headset of my PC. H9 for my PS consoles.<br>
+         <span style="color: var(--neon-yellow);">Headset</span> : Audeze Maxwell. I'm using Maxwell as my main headset of my PC, maxwell get a well balance between audiophile and gamer. <br>
          <img src="https://i.imgur.com/V0R7O0W.jpg" style="width: 50%; height: 50%;" loading="lazy">
     </h3>
 </div>

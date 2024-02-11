@@ -1,5 +1,5 @@
 ---
-title: "Project-Optimization of LiveChess2FEN on Nvidia Jetson Nano"
+title: "[Project] Optimization of LiveChess2FEN on Nvidia Jetson Nano"
 date: "Aug 13, 2023"
 ---
 <div>
@@ -19,8 +19,13 @@ date: "Aug 13, 2023"
   
   <h3 style="color: var(--neon-yellow);"><b>1.Goal and Conclusion</b></h3>
   <h4>
-      Goal of this project is to implement and deploy LiveChess2FEN(A CNN-based live chess detection) on a Nvidia Jetson Nano, and try to find optimization and acceleartion to improve overall performance.<br><br>
-      Based on original research, I've accomplished several tasks in this project, such as model training, deploying the model, and optimization. Despite investing considerable time and effort, I haven't been able to surpass the results of the original research due to limitations in my ability and time. Yet, this project has been a valuable learning experience for me
+      The goal of this project is to implement and deploy LiveChess2FEN (a CNN-based live chess detection) on an Nvidia Jetson Nano. <br>
+      I try to find optimizations and accelerations to improve overall performance. I believe it's worth working on; after all, we can't always rely solely on powerful hardware. <br>
+      <br>
+      Based on original research, I've accomplished several tasks in this project, such as model training, deploying the model, and optimization. Despite investing considerable time and effort, I haven't been able to surpass the results of the original research due to limitations in my ability and time.<br>
+      Yet, this project has been a valuable learning experience for me.<br>
+      1. CNN Models : 
+      2. Computer Visions Technique : 
   </h4>
   <h3 style="color: var(--neon-yellow);"><b>2.An overview of LiveChess2FEN(LC2F)<br>For more information, please refer to the original research paper <a style="color: var(--neon-pink);" href="https://arxiv.org/abs/2012.06858">here</a>.</b></h3>
   <ol style="font-size: 19.5px;" type="I">
@@ -32,7 +37,4 @@ date: "Aug 13, 2023"
       The result is a framework that can automatically digitize a chess position from an image in less than 1 second with 92% accuracy in classifying the pieces and 95% accuracy in detecting the board.
     </li>
   </ol>
-  There's two aspects to divide the chess detection problem.
-  1. Computer vision wise.
-  2. Machine Learning wise.
 </div>

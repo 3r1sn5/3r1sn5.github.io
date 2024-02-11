@@ -1,5 +1,5 @@
 ---
-title: "My first keyboard modding! ROG Azoth"
+title: "[Keyboard] My first keyboard modding! ROG Azoth"
 date: "Nov 30, 2023"
 ---
 <div>
