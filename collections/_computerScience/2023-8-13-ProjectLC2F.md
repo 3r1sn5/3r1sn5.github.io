@@ -1,5 +1,5 @@
 ---
-title: "[Project] Optimization of LiveChess2FEN on Nvidia Jetson Nano"
+title: "[Project] Optimization of LiveChess2FEN on Nvidia Jetson Nano(WIP)"
 date: "Aug 13, 2023"
 ---
 <div>

@@ -16,13 +16,13 @@ bgtext              : "エルスンウー" # texts randomly displayed in backgro
 collection_order    : 
   [
     "computerScience",
-    "mathematics",
+    "computerHardware",
     "programming",
-    "gunpla",
     "acg",
     # "myNotes",
     "rock4life",
-    "daily"
+    "daily",
+    "gunpla",
   ]
 collections:
   mathematics:   
@@ -39,10 +39,10 @@ collections:
     output          : true
     permalink       : /:collection/:title/
     alias           : "Programming"
-  #gunpla:
-  #  output          : true
-  #  permalink       : /:collection/:title/
-  #  alias           : "GUNPLA"
+  gunpla:
+    output          : true
+    permalink       : /:collection/:title/
+    alias           : "GUNPLA"
   acg:
     output          : true
     permalink       : /:collection/:title/
@@ -60,6 +60,10 @@ collections:
     output          : true
     permalink       : /:collection/:title/
     alias           : "Daily"
+  computerHardware:
+    output          : true
+    permalink       : /:collection/:title/
+    alias           : "Computer Hardware"
   
 # 3. Comment settings（disqus.com）
 disqus_username     : ErlsnWu
